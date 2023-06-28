@@ -1,0 +1,41 @@
+Ruta para acceder a los proyectos de Angular:
+cd FrontEnd/Angular/Store/
+
+Instalación:
+npm i -g @angular/cli
+ng new (nombre del proyecto)
+ng g c components/product
+
+en Angular si vamos a usar una nueva funcionalidad debemos declararla en el módulo principal
+
+Herramientas:
+
+bootstrap y se agrega en angular.json en la sección styles :
+npm i bootstrap@5.3.0
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+y el bootstrap.min.js en el script
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+Jquery:
+https://jquery.com/download/
+
+Iconos:
+Se agrega primero el link al index.html principal
+https://cdnjs.com/libraries/font-awesome
+https://fontawesome.com
+
+Fuentes:
+https://fonts.google.com/?preview.size=17
+
+Estilos css:
+https://uigradients.com
+
+Framework parecido a bootstrap
+npm i --save @angular/material @angular/cdk
+
+https://mui.com
+https://material.angular.io 
+
+Alertas interactivas y se agrega en angular.json en la sección styles:
+npm i ngx-toastr
+"node_modules/ngx-toastr/toastr.css"

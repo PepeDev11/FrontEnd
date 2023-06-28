@@ -1,0 +1,23 @@
+.text.danger {
+  text-align: center;
+  margin-left: 7px;
+}
+
+.fa {
+  font-size: 35px;
+}
+
+.titulo{
+  color: black;
+  font-weight: bold;
+}
+
+.sp{
+  color: black;
+  font-weight: bold;
+}
+
+::placeholder{
+  color: black;
+  font-weight: bold;
+}

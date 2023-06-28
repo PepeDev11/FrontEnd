@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="mt-5" style="background-color: transparent">
+        <div class="containerr card-body text-center">
+          <span class="titulo">{{ titulo | uppercase }}<i class="fa fa-duotone fa-laptop col-lg-1"></i></span>
+          <form class="mt-1" [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
+
+            <div class="mb-3 form-group">
+              <input type="text" formControlName="modelo"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Modelo">
+                  <div
+                      *ngIf="productoForm.get('modelo')?.hasError('required') && productoForm.get('modelo')?.touched">
+                    <span class="sp">El nombre del modelo <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="marca"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Marca">
+                  <div
+                      *ngIf="productoForm.get('marca')?.hasError('required') && productoForm.get('marca')?.touched ">
+                    <span class="sp">El nombre de la marca <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="procesador"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Procesador">
+                  <div
+                      *ngIf="productoForm.get('procesador')?.hasError('required') && productoForm.get('procesador')?.touched ">
+                    <span class="sp">El nombre del procesador <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="memoriaRam"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Memoria Ram">
+                  <div
+                      *ngIf="productoForm.get('memoriaRam')?.hasError('required') && productoForm.get('memoriaRam')?.touched ">
+                    <span class="sp">El nombre de la memoria ram <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="discos"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Discos">
+                  <div
+                      *ngIf="productoForm.get('discos')?.hasError('required') && productoForm.get('discos')?.touched ">
+                    <span class="sp">El nombre del disco <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="tarjetaMadre"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Tarjeta Madre">
+                  <div
+                      *ngIf="productoForm.get('tarjetaMadre')?.hasError('required') && productoForm.get('tarjetaMadre')?.touched ">
+                    <span class="sp">El nombre de la tarjeta madre <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" formControlName="tarjetaVideo"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Tarjeta de Video">
+                  <div
+                      *ngIf="productoForm.get('tarjetaVideo')?.hasError('required') && productoForm.get('tarjetaVideo')?.touched ">
+                    <span class="sp">El nombre de la tarjeta de video <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="number" formControlName="precio"
+                  class="form-control form-control-lg bg-dark p-2 text-dark bg-opacity-10" placeholder="Precio">
+                  <div
+                      *ngIf="productoForm.get('precio')?.hasError('required') && productoForm.get('precio')?.touched ">
+                    <span class="sp">El nombre del precio <strong>es obligatorio</strong></span>
+                  </div>
+            </div>
+
+            <div class="mb-3">
+              <button routerLink="/" class="btn btn-outline-dark btn-lg float-start">VOLVER</button>
+              <button type="submit" [disabled]="productoForm.invalid" class="btn btn-success btn-lg float-end">ACEPTAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

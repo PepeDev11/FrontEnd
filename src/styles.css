@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  /*background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);*/
+  /*background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);*/
+  /*background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);*/
+
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+
+  /*background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);*/
+  /*background-image: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%);*/
+  /*background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);*/
+}
+
+.titulo {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}

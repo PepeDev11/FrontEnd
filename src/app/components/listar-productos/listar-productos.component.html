@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-12 offset-lg-0">
+      <div class="mt-3" style="background-color: transparent">
+        <div class="card-body text-center container">
+          <button routerLink="/" class="btn btn-outline-dark btn-lg float-start">VOLVER</button>
+          <span class="titulo">LISTADO DE LAPTOPS</span>
+          <button class="btn btn-lg btn-outline-light float-end" routerLink="/crear-laptop">CREAR LAPTOP</button>
+
+          <table *ngIf="listProductos.length > 0" class="table table-dark table-striped mt-5">
+            <thead>
+              <tr>
+                <th scope="col">Modelo</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Procesador</th>
+                <th scope="col">Memoria Ram</th>
+                <th scope="col">Discos</th>
+                <th scope="col">Tarjeta Madre</th>
+                <th scope="col">Tarjeta Video</th>
+                <th scope="col">Precio</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let producto of listProductos">
+                <td>{{ producto.modelo }}</td>
+                <td>{{ producto.marca }}</td>
+                <td>{{ producto.procesador }}</td>
+                <td>{{ producto.memoriaRam }}</td>
+                <td>{{ producto.discos }}</td>
+                <td>{{ producto.tarjetaMadre }}</td>
+                <td>{{ producto.tarjetaVideo }}</td>
+                <td>{{ producto.precio | currency: 'USD'}}</td>
+                <td>
+                  <i [routerLink]="['/editar-laptop', producto._id]"  class="fas fa-cloud-upload text-primary" aria-hidden="true"></i>
+                  <!---<i [routerLink]="['/editar-laptop', producto._id]" class="fas fa-solid fa-pen-to-square text-primary"></i>--->
+
+                  <i (click)="eliminarProducto(producto._id)" class="fas fa-times text-danger" aria-hidden="true"></i>
+                  <!---<i (click)="eliminarProducto(producto._id)" class="fas fa-solid fa-trash text-danger"></i>-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h5 style="text-align: start; margin-top: 10px" *ngIf="listProductos.length == 0">No hay productos para mostrar</h5>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

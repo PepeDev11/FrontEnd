@@ -1,0 +1,69 @@
+<!---
+<button [routerLink]="['/listar']">Listar computadoras</button>
+<button [routerLink]="['/crear-laptop']">Crear computadoras</button>
+-->
+
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(22, 18, 18, 0.603)">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']">LAPHUB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <div class="container">
+
+        <p class="pp">GRUPO 4853, LAPHUB</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="https://images.unsplash.com/photo-1550520920-27ba45c38740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      class="d-block w-100 c-img">
+      <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+        <h2 class="display-1 fw-bolder text-capitalize text-dark mt-5">¡BIENVENIDO!</h2>
+        <p class="mt-5 fs-3 text-uppercase text-dark">Aquí encuentras todas las especificaciones de esa laptop que buscas</p>
+        <button routerLink="/crear-laptop" class="btn btn-dark btn-lg px-4 mt-2">CREAR LAPTOP</button>
+        <button routerLink="/listar" class="btn btn-dark btn-lg px-4 mt-2 offset-sm-1">LISTAR LAPTOP</button>
+      </div>
+    </div>
+
+    <div class="carousel-item active c-item">
+      <img src="https://images.unsplash.com/photo-1522169799806-79cb544552bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=773&q=80"
+      class="d-block w-100 c-img">
+      <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+        <h2 class="display-1 fw-bolder text-capitalize text-dark mt-5">¡BIENVENIDO!</h2>
+        <p class="mt-5 fs-3 text-uppercase text-dark">Aquí encuentras todas las especificaciones de esa laptop que buscas</p>
+        <button routerLink="/crear-laptop" class="btn btn-dark btn-lg px-4 mt-2">CREAR LAPTOP</button>
+        <button routerLink="/listar" class="btn btn-dark btn-lg px-4 mt-2 offset-sm-1">LISTAR LAPTOP</button>
+      </div>
+    </div>
+
+<div class="carousel-item active c-item">
+      <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      class="d-block w-100 c-img">
+      <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+        <h2 class="display-1 fw-bolder text-capitalize text-dark mt-5">¡BIENVENIDO!</h2>
+        <p class="mt-5 fs-3 text-uppercase text-dark">Aquí encuentras todas las especificaciones de esa laptop que buscas</p>
+        <button routerLink="/crear-laptop" class="btn btn-dark btn-lg px-4 mt-2">CREAR LAPTOP</button>
+        <button routerLink="/listar" class="btn btn-dark btn-lg px-4 mt-2 offset-sm-1">LISTAR LAPTOP</button>
+      </div>
+    </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
